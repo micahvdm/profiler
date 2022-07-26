@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018-2020 Oleg Kapitonov
+ * Copyright (C) 2018-2020 Oleg Kapitonov and 2022 Micah John
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -71,8 +71,8 @@ struct stPorts
 // Structure for URI mapping
 struct stTubeAmpURIs
 {
-	LV2_URID patch_Get;
-	LV2_URID patch_Set;
+  LV2_URID patch_Get;
+  LV2_URID patch_Set;
   LV2_URID patch_property;
   LV2_URID patch_value;
   LV2_URID profile;
