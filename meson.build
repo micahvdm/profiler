@@ -1,4 +1,4 @@
-project('kpp', 'cpp', 'c', license: 'GPL-3.0-or-later', version: '1.2',
+project('profiler', 'cpp', 'c', license: 'GPL-3.0-or-later', version: '1.2',
   default_options : ['buildtype=release'])
 
 cc = meson.get_compiler('cpp')
@@ -22,9 +22,9 @@ if not lv2.found() and not ladspa
 endif
 
 plugins = {
-  'tubeamp': {
+  'profiler': {
     'gui': false,
-    'lv2src': ['kpp_tubeamp.cpp'],
+    'lv2src': ['profiler.cpp'],
     'libs': ['zita-convolver', 'zita-resampler']
   },
 }

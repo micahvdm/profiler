@@ -23,7 +23,7 @@
 
 #include "lv2/lv2plug.in/ns/ext/worker/worker.h"
 
-#include "kpp_tubeamp.h"
+#include "profiler.h"
 
 // Zita-convolver parameters
 #define CONVPROC_SCHEDULER_PRIORITY 0
@@ -32,7 +32,7 @@
 
 #define fragm 64
 
-#include "kpp_tubeamp_dsp.h"
+#include "profiler_dsp.h"
 
 struct stPlugin {
   bool active;       // activation status

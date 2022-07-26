@@ -8,7 +8,7 @@ gen_args = cxx.get_supported_arguments(
       ['-Wno-sign-compare', '-Wno-unused-variable', '-Wno-unused-function'])
 
 foreach suffix, opts : plugins
-  name = 'kpp_@0@'.format(suffix)
+  name = '@0@'.format(suffix)
   deps = []
   foreach lib : opts.get('libs', [])
     deps += cxx.find_library(lib, required: true)

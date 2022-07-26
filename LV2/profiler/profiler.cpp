@@ -37,7 +37,7 @@
 
 #include "atom_sink.h"
 #include "profile.h"
-#include "kpp_tubeamp.h"
+#include "profiler.h"
 #include "faust-support.h"
 
 using namespace std;
@@ -180,8 +180,8 @@ instantiate(const LV2_Descriptor*     descriptor,
   plugin->uris.patch_property = plugin->map->map(plugin->map->handle, LV2_PATCH__property);
   plugin->uris.patch_value = plugin->map->map(plugin->map->handle, LV2_PATCH__value);
   plugin->uris.atom_Path = plugin->map->map(plugin->map->handle, LV2_ATOM__Path);
-  plugin->uris.profile = plugin->map->map(plugin->map->handle, "https://faustlv2.bitbucket.io/kpp_tubeamp#profile");
-  plugin->uris.freeSample = plugin->map->map(plugin->map->handle, "https://faustlv2.bitbucket.io/kpp_tubeamp#freeSample");
+  plugin->uris.profile = plugin->map->map(plugin->map->handle, "https://faustlv2.bitbucket.io/profiler#profile");
+  plugin->uris.freeSample = plugin->map->map(plugin->map->handle, "https://faustlv2.bitbucket.io/profiler#freeSample");
 
   lv2_atom_forge_init(&plugin->forge, plugin->map);
 

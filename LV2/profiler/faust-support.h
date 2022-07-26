@@ -20,12 +20,12 @@
 #ifndef FAUST_SUPPORT_H
 #define FAUST_SUPPORT_H
 
-#include "kpp_tubeamp.h"
+#include "profiler.h"
 
 class UI {
 public:
     UI(){};
-    
+
     void openVerticalBox(const char * name) {};
     void closeBox() {};
 };
@@ -42,10 +42,10 @@ class dsp {
 
         /* Return instance number of audio inputs */
         virtual int getNumInputs() = 0;
-    
+
         /* Return instance number of audio outputs */
         virtual int getNumOutputs() = 0;
-    
+
         /**
          * Trigger the ui_interface parameter with instance specific calls
          * to 'addBtton', 'addVerticalSlider'... in order to build the UI.
@@ -53,10 +53,10 @@ class dsp {
          * @param ui_interface - the user interface builder
          */
         virtual void buildUserInterface(UI* ui_interface) = 0;
-    
+
         /* Returns the sample rate currently used by the instance */
         virtual int getSampleRate() = 0;
-    
+
         /**
          * Global init, calls the following methods:
          * - static class 'classInit': static tables initialization
@@ -79,27 +79,27 @@ class dsp {
          * @param samplingRate - the sampling rate in Hertz
          */
         virtual void instanceConstants(int samplingRate) = 0;
-    
+
         /* Init default control parameters values */
         virtual void instanceResetUserInterface() = 0;
-    
+
         /* Init instance state (delay lines...) */
         virtual void instanceClear() = 0;
- 
+
         /**
          * Return a clone of the instance.
          *
          * @return a copy of the instance on success, otherwise a null pointer.
          */
         virtual dsp* clone() = 0;
-    
+
         /**
          * Trigger the Meta* parameter with instance specific calls to 'declare' (key, value) metadata.
          *
          * @param m - the Meta* meta user
          */
         virtual void metadata(Meta* m) = 0;
-    
+
         /**
          * DSP instance computation, to be called with successive in/out audio buffers.
          *
@@ -109,7 +109,7 @@ class dsp {
          *
          */
         virtual void compute(int count, float** inputs, float** outputs) = 0;
-    
+
         /**
          * DSP instance computation: alternative method to be used by subclasses.
          *
@@ -120,7 +120,7 @@ class dsp {
          *
          */
         virtual void compute(double date_usec, int count, float** inputs, float** outputs) { compute(count, inputs, outputs); }
-       
+
 };
 
 #endif

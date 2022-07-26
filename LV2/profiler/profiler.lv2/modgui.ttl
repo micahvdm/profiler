@@ -1,13 +1,13 @@
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
 
-<https://faustlv2.bitbucket.io/kpp_tubeamp>
+<https://faustlv2.bitbucket.io/profiler>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
-        modgui:iconTemplate <modgui/icon-kpptubeamp.html> ;
-        modgui:stylesheet <modgui/stylesheet-kpptubeamp.css> ;
-        modgui:screenshot <modgui/screenshot-kpptubeamp.png> ;
-        modgui:thumbnail <modgui/thumbnail-kpptubeamp.png> ;
+        modgui:iconTemplate <modgui/icon-profiler.html> ;
+        modgui:stylesheet <modgui/stylesheet-profiler.css> ;
+        modgui:screenshot <modgui/screenshot-profiler.png> ;
+        modgui:thumbnail <modgui/thumbnail-profiler.png> ;
         modgui:brand "KPP" ;
         modgui:label "Amp Profiler" ;
         modgui:model "combo-model-001" ;

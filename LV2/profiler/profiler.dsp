@@ -33,10 +33,10 @@
  * Cabsym convolver may be bypassed.
  */
 
-declare name "kpp_tubeamp";
-declare author "Oleg Kapitonov";
+declare name "profiler";
+declare author "Micah John";
 declare license "GPLv3";
-declare version "1.2";
+declare version "1.5";
 
 import("stdfaust.lib");
 
@@ -119,5 +119,3 @@ process = preamp_amp with {
     max(1.0) : min(2.5)) : *(volume) :
     *(output_level) : fi.dcblocker <: _,_;
 };
-
-

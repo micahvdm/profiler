@@ -1,5 +1,5 @@
 
-########## https://faustlv2.bitbucket.io/kpp_tubeamp ##########
+########## https://faustlv2.bitbucket.io/profiler ##########
 
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -7,16 +7,16 @@
 @prefix ui:   <http://lv2plug.in/ns/extensions/ui#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<https://faustlv2.bitbucket.io/kpp_tubeamp>
+<https://faustlv2.bitbucket.io/profiler>
     a lv2:Plugin ;
-    lv2:binary <kpp_tubeamp.so> ;
-    rdfs:seeAlso <kpp_tubeamp.ttl> .
+    lv2:binary <profiler.so> ;
+    rdfs:seeAlso <profiler.ttl> .
 
-<https://faustlv2.bitbucket.io/kpp_tubeamp>
+<https://faustlv2.bitbucket.io/profiler>
      doap:license <http://opensource.org/licenses/isc> ;
      doap:maintainer [
          foaf:name "Oleg Kapitonov" ;
          foaf:mbox <mailto:kapitonov1987@gmail.com> ;
      ] .
 
-<https://faustlv2.bitbucket.io/kpp_tubeamp> rdfs:seeAlso <modgui.ttl> .
+<https://faustlv2.bitbucket.io/profiler> rdfs:seeAlso <modgui.ttl> .

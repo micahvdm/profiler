@@ -18,8 +18,8 @@
  */
 
 
-#ifndef KPP_TUBEAMP_H
-#define KPP_TUBEAMP_H
+#ifndef PROFILER_H
+#define PROFILER_H
 
 #include <map>
 #include <string>
