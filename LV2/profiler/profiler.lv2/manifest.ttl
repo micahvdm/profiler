@@ -15,8 +15,8 @@
 <https://faustlv2.bitbucket.io/profiler>
      doap:license <http://opensource.org/licenses/isc> ;
      doap:maintainer [
-         foaf:name "Oleg Kapitonov" ;
-         foaf:mbox <mailto:kapitonov1987@gmail.com> ;
+         foaf:name "Micah John" ;
+         foaf:mbox <mailto:micahvdm@gmail.com> ;
      ] .
 
 <https://faustlv2.bitbucket.io/profiler> rdfs:seeAlso <modgui.ttl> .

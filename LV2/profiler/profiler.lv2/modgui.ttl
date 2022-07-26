@@ -8,7 +8,7 @@
         modgui:stylesheet <modgui/stylesheet-profiler.css> ;
         modgui:screenshot <modgui/screenshot-profiler.png> ;
         modgui:thumbnail <modgui/thumbnail-profiler.png> ;
-        modgui:brand "KPP" ;
+        modgui:brand "DivideCo" ;
         modgui:label "Amp Profiler" ;
         modgui:model "combo-model-001" ;
         modgui:panel "0930" ;
