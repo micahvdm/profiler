@@ -1,4 +1,4 @@
-project('profiler', 'cpp', 'c', license: 'GPL-3.0-or-later', version: '1.2',
+project('profiler', 'cpp', 'c', license: 'GPL-3.0-or-later', version: '1.5',
   default_options : ['buildtype=release'])
 
 cc = meson.get_compiler('cpp')
@@ -14,7 +14,6 @@ cairo = dependency('cairo', required: get_option('gui'))
 faust = find_program('faust', required: true)
 faustarch = run_command(faust, '-archdir', check: true).stdout().strip()
 
-ladspa = cxx.has_header('ladspa.h', required: get_option('ladspa'))
 lv2 = dependency('lv2', required: get_option('lv2'))
 
 if not lv2.found() and not ladspa
@@ -37,8 +36,4 @@ add_project_arguments(
 
 if lv2.found()
   subdir('LV2')
-endif
-
-if ladspa
-  subdir('LADSPA')
 endif
