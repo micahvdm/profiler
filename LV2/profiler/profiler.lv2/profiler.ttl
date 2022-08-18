@@ -12,6 +12,7 @@
 @prefix urid:  <http://lv2plug.in/ns/ext/urid#> .
 @prefix work:  <http://lv2plug.in/ns/ext/worker#> .
 @prefix mod: <http://moddevices.com/ns/mod#>.
+@prefix param: <http://lv2plug.in/ns/ext/parameters#> .
 
 <https://faustlv2.bitbucket.io/profiler#profile>
 	a lv2:Parameter ;
