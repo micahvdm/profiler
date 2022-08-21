@@ -1,0 +1,44 @@
+@prefix modgui: <http://moddevices.com/ns/modgui#> .
+@prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
+
+<https://faustlv2.bitbucket.io/profiler>
+    modgui:gui [
+        modgui:resourcesDirectory <modgui> ;
+        modgui:iconTemplate <modgui/icon-amp-profiler.html> ;
+        modgui:stylesheet <modgui/stylesheet-amp-profiler.css> ;
+        modgui:screenshot <modgui/screenshot-amp-profiler.png> ;
+        modgui:thumbnail <modgui/thumbnail-amp-profiler.png> ;
+        modgui:brand "" ;
+        modgui:label "" ;
+        modgui:model "head-model-001" ;
+        modgui:panel "0800" ;
+        modgui:port [
+            lv2:index 0 ;
+            lv2:symbol "Bass_0" ;
+            lv2:name "Bass" ;
+        ] , [
+            lv2:index 1 ;
+            lv2:symbol "Bass_0" ;
+            lv2:name "Bass" ;
+        ] , [
+            lv2:index 2 ;
+            lv2:symbol "Middle_1" ;
+            lv2:name "Middle" ;
+        ] , [
+            lv2:index 3 ;
+            lv2:symbol "Treble_2" ;
+            lv2:name "Treble" ;
+        ] , [
+            lv2:index 4 ;
+            lv2:symbol "drive_3" ;
+            lv2:name "drive" ;
+        ] , [
+            lv2:index 5 ;
+            lv2:symbol "mastergain_4" ;
+            lv2:name "mastergain" ;
+        ] , [
+            lv2:index 6 ;
+            lv2:symbol "volume_5" ;
+            lv2:name "volume" ;
+        ] ;
+    ] .
