@@ -202,8 +202,7 @@
     height: 69px;
     overflow: auto;
     position: relative;
-    position: absolute;
-    width: 242px;
+    width: 388px;
     z-index: 3;
 }
 
