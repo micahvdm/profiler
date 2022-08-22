@@ -1,10 +1,8 @@
 @prefix doap:  <http://usefulinc.com/ns/doap#> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
 @prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
-@prefix ui:    <http://lv2plug.in/ns/extensions/ui#> .
 @prefix epp:   <http://lv2plug.in/ns/ext/port-props#> .
 @prefix atom:  <http://lv2plug.in/ns/ext/atom#> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix units: <http://lv2plug.in/ns/extensions/units#> .
 @prefix patch: <http://lv2plug.in/ns/ext/patch#> .
@@ -13,8 +11,6 @@
 @prefix work:  <http://lv2plug.in/ns/ext/worker#> .
 @prefix mod: <http://moddevices.com/ns/mod#>.
 @prefix param: <http://lv2plug.in/ns/ext/parameters#> .
-
-state:freePath a lv2:Feature .
 
 <https://faustlv2.bitbucket.io/profiler#profile>
 	a lv2:Parameter ;
@@ -27,7 +23,7 @@ state:freePath a lv2:Feature .
        doap:name "Amp Profiler" ;
        lv2:binary <profiler.so> ;
        lv2:requiredFeature urid:map , work:schedule ;
-       lv2:optionalFeature lv2:hardRtCapable, state:freePath, state:loadDefaultState, state:threadSafeRestore ;
+       lv2:optionalFeature lv2:hardRtCapable, state:loadDefaultState, state:threadSafeRestore ;
        lv2:extensionData state:interface , work:interface ;
        patch:writable <https://faustlv2.bitbucket.io/profiler#profile> ;
     lv2:port [
