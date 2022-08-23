@@ -136,6 +136,7 @@
     position: relative;
     text-align: center;
     width: 80px;
+    cursor: pointer;
 }
 
 .mod-head-model-001{{{cns}}} .mod-chicken-head .mod-chicken-head-image {
