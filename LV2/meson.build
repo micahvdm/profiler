@@ -5,7 +5,7 @@ faust_lv2_gen = generator(faust,
       '-o', '@OUTPUT@', '@INPUT@'])
 
 gen_args = cxx.get_supported_arguments(
-      ['-Wno-sign-compare', '-Wno-unused-variable', '-Wno-unused-function'])
+      ['-mtune=cortex-a53', '-ftree-vectorize', '-Ofast', '-Wno-sign-compare', '-Wno-unused-variable', '-Wno-unused-function'])
 
 foreach suffix, opts : plugins
   name = '@0@'.format(suffix)
