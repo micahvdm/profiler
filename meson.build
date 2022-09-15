@@ -1,4 +1,4 @@
-project('amp', 'cpp', 'c', license: 'GPL-3.0-or-later', version: '1.5',
+project('amp', 'cpp', 'c', license: 'GPL-3.0-or-later', version: '2.0',
   default_options : ['buildtype=release'])
 
 cc = meson.get_compiler('cpp')
