@@ -20,12 +20,21 @@
 
 <https://faustlv2.bitbucket.io/profiler>
        a lv2:Plugin, lv2:SimulatorPlugin;
+       lv2:minorVersion 2;
+       lv2:microVersion 0;
        doap:name "Amp Profiler" ;
        lv2:binary <profiler.so> ;
        lv2:requiredFeature urid:map , work:schedule ;
        lv2:optionalFeature lv2:hardRtCapable, state:loadDefaultState, state:threadSafeRestore ;
        lv2:extensionData state:interface , work:interface ;
        patch:writable <https://faustlv2.bitbucket.io/profiler#profile> ;
+
+rdfs:comment """
+The Profiler is a ported and optimised version of kpp_tubeamp to Mod platform.
+Default profiles by Micah John
+Plugin by Oleg Kapitonov, ported and optimised by Micah John
+""";
+
     lv2:port [
 	a lv2:InputPort ;
 	a lv2:ControlPort ;
