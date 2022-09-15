@@ -134,5 +134,5 @@
 	] ;
 
 	state:state [
-		<https://faustlv2.bitbucket.io/profiler#profile> <V30Countess.tapf>
+		<https://faustlv2.bitbucket.io/profiler#profile> <profiles/V30Countess.tapf>
 	] .
