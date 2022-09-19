@@ -98,7 +98,7 @@ process = preamp_amp with {
 
     stage_tonestack = fi.peak_eq(tonestack_low,tonestack_low_freq,tonestack_low_band) :
     fi.peak_eq(tonestack_middle,tonestack_middle_freq,tonestack_middle_band) :
-    fi.peak_eq(tonestack_high,tonestack_high_freq,tonestack_high_band): fi.lowpass(1,11000);
+    fi.peak_eq(tonestack_high,tonestack_high_freq,tonestack_high_band): fi.lowpass(1,12000);
 
     // Power Amp - has 1 class B tube distortion (symmetric)
     stage_amp = _<: _,*(-1.0) :
