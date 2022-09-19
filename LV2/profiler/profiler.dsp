@@ -36,7 +36,7 @@
 declare name "profiler";
 declare author "Micah John";
 declare license "GPLv3";
-declare version "1.5";
+declare version "2.0";
 
 import("stdfaust.lib");
 
@@ -93,7 +93,7 @@ process = preamp_amp with {
     };
 
     // Preamp - has 1 class A tube distortion (non symmetric)
-    stage_preamp = fi.lowpass(1,11000) :
+    stage_preamp = fi.lowpass(1,12000) :
     tube(preamp_Kreg,preamp_Upor,preamp_bias,-preamp_Upor);
 
     stage_tonestack = fi.peak_eq(tonestack_low,tonestack_low_freq,tonestack_low_band) :
@@ -105,7 +105,7 @@ process = preamp_amp with {
     tube(amp_Kreg,amp_Upor,amp_bias,0),
     tube(amp_Kreg,amp_Upor,amp_bias,0) :
     - :
-    fi.lowpass(1, 11000);
+    fi.lowpass(1, 12000);
 
     // Part of the chain before Voltage Sag in power amp
     pre_sag = _,_ : + : fi.dcblocker : *(ba.db2linear(drive * 0.4) - 1) :
